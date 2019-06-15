@@ -1,10 +1,45 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Daniel Bernstein',
     // eslint-disable-next-line max-len
-    description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+    description: 'Producing modern excellent websites',
+    author: '@Dan Bernstein',
+    socialIcons: [
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/droodor87',
+      },
+      {
+        name: 'github',
+        url: 'https://github.com/drood87',
+      },
+      {
+        name: 'instagram',
+        url: 'https://www.instagram.com/dani87dani/',
+      },
+      {
+        name: 'email',
+        url: 'mailto:dbernstein87@googlemail.com',
+      },
+    ],
+    menuLinks: [
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'Projects',
+        link: '/projects',
+      },
+      {
+        name: 'About Me',
+        link: '/about',
+      },
+      {
+        name: 'Contact',
+        link: '/contact',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
