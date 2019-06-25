@@ -15,22 +15,31 @@ import Header from './header';
 import Socials from './socials';
 import './layout.css';
 
-const FlexSiteContainer = styled.div`
-  display: flex;
-`;
-
 const BodyContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80vw;
   position: relative;
+  margin-left: 20vw;
 `;
 
 const SocialWrapper = styled.div`
-  position: absolute;
+  position: fixed;
   right: 1rem;
-  bottom: 1rem;
+  top: 90%;
+`;
+
+const StyledFooter = styled.footer`
+  font-size: 0.6rem;
+  margin-top: 14%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+`;
+
+const Main = styled.main`
+  max-width: 960px;
+  margin: 0 auto 60px;
+  min-height: 70vh;
+  padding: 160px 5% 80px;
 `;
 
 const Layout = ({ children }) => (
@@ -54,24 +63,25 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <FlexSiteContainer>
-          <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
-          <BodyContainer>
-            <main>{children}</main>
-            <footer>
-              ©
-              {' '}
-              {new Date().getFullYear()}
-, Built with
-              {' '}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>
+        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+        <BodyContainer>
+          <Main>{children}</Main>
+          <StyledFooter>
+            ©
             {' '}
-          </BodyContainer>
-          <SocialWrapper>
-            <Socials socialIcons={data.site.siteMetadata.socialIcons} name={data.site.siteMetadata.name} />
-          </SocialWrapper>
-        </FlexSiteContainer>
+            {new Date().getFullYear()}
+, coded and designed by
+            {' '}
+            <a href="https://github.com/drood87">Daniel Bernstein</a>
+            {' '}
+with ☕️, 🎧 and ❤️ in Bali 🌴
+            {' '}
+          </StyledFooter>
+          {' '}
+        </BodyContainer>
+        <SocialWrapper>
+          <Socials socialIcons={data.site.siteMetadata.socialIcons} name={data.site.siteMetadata.name} />
+        </SocialWrapper>
       </>
     )}
   />
