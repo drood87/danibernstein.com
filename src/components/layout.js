@@ -8,7 +8,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 import Header from './header';
@@ -39,7 +39,7 @@ const Main = styled.main`
   max-width: 960px;
   margin: 0 auto 60px;
   min-height: 70vh;
-  padding: 160px 5% 80px;
+  padding: 100px 5% 80px;
 `;
 
 const Layout = ({ children }) => (

@@ -40,6 +40,38 @@ module.exports = {
         link: '/contact',
       },
     ],
+    projects: [
+      {
+        name: 'Natours',
+        techStack: ['SCSS', 'CSS3', 'HTML5', 'NPM'],
+        link: 'https://www.natours.danibernstein.com/',
+      },
+      {
+        name: 'Nexter',
+        techStack: ['SCSS', 'CSS3', 'HTML5', 'NPM', 'Focus on CSS Grid'],
+        link: 'https://www.nexter.danibernstein.com/',
+      },
+      {
+        name: 'Omnifood',
+        techStack: ['SCSS', 'CSS3', 'HTML5', 'NPM', 'Javascript'],
+        link: 'https://www.omnifood.danibernstein.com',
+      },
+      {
+        name: 'SmartBrain App',
+        techStack: ['ReactJs', 'NodeJs', 'Express', 'Clarifai Api'],
+        link: 'https://smart-face-detection123.herokuapp.com/',
+      },
+      {
+        name: 'Catch of the day',
+        techStack: ['ReactJs', 'Firebase', 'React-Router', 'React Transition Group', 'Stylus'],
+        link: 'https://www.catchoftheday.danibernstein.com/',
+      },
+      {
+        name: 'GDDB',
+        techStack: ['ReactJs', 'Gatsby', 'Reach-Router', 'StyledComponents'],
+        link: 'https://www.gddb.danibernstein.com/',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
