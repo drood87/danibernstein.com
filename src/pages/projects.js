@@ -46,11 +46,5 @@ const ProjectsContainer = styled.div`
   grid-auto-flow: column;
   grid-template-rows: max-content;
   grid-gap: 2rem;
-  overflow-x: scroll;
-
-  /* &:last-child {
-    margin-right: 2rem;
-  } */
+  overflow-x: auto;
 `;
-
-// export default Projects;

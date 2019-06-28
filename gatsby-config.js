@@ -48,12 +48,12 @@ module.exports = {
       },
       {
         name: 'Nexter',
-        techStack: ['SCSS', 'CSS3', 'HTML5', 'NPM', 'Focus on CSS Grid'],
+        techStack: ['SCSS', 'CSS3', 'HTML5', 'NPM'],
         link: 'https://www.nexter.danibernstein.com/',
       },
       {
         name: 'Omnifood',
-        techStack: ['SCSS', 'CSS3', 'HTML5', 'NPM', 'Javascript'],
+        techStack: ['SCSS', 'CSS3', 'HTML5', 'Javascript'],
         link: 'https://www.omnifood.danibernstein.com',
       },
       {
@@ -63,7 +63,7 @@ module.exports = {
       },
       {
         name: 'Catch of the day',
-        techStack: ['ReactJs', 'Firebase', 'React-Router', 'React Transition Group', 'Stylus'],
+        techStack: ['ReactJs', 'Firebase', 'React-Router', 'React Transition Group'],
         link: 'https://www.catchoftheday.danibernstein.com/',
       },
       {
