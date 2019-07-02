@@ -12,7 +12,7 @@ export default class Projectcard extends Component {
         <h5>Technologies used</h5>
         <ul>
           {techStack.map(stack => (
-            <li>{stack}</li>
+            <li key={stack}>{stack}</li>
           ))}
         </ul>
         <a href={link}>Visit Site</a>
