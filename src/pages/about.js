@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import Headings from '../components/headings';
 import SEO from '../components/seo';
+import Image from '../components/image';
 
 export default class about extends Component {
   render() {
@@ -75,6 +76,9 @@ export default class about extends Component {
           {' '}
 me.
         </p>
+        <ImageContainerStyled>
+          <Image />
+        </ImageContainerStyled>
         <Resume>
           <FakeButtons />
           <h3>Resume</h3>
@@ -216,4 +220,9 @@ const FakeButtons = styled.span`
     top: -7px;
     left: 13px;
   }
+`;
+
+const ImageContainerStyled = styled.div`
+  max-width: 50%;
+  max-height: 50%;
 `;
