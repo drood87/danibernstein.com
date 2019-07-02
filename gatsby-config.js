@@ -58,7 +58,7 @@ module.exports = {
       },
       {
         name: 'SmartBrain App',
-        techStack: ['ReactJs', 'NodeJs', 'Express', 'Clarifai Api'],
+        techStack: ['React.js', 'Node.js', 'Express', 'Clarifai Api'],
         link: 'https://smart-face-detection123.herokuapp.com/',
       },
       {

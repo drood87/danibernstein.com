@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { graphql, StaticQuery } from 'gatsby';
-// import ScrollArea from 'react-scrollbar';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Headings from '../components/headings';
