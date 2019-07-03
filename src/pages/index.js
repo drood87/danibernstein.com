@@ -2,34 +2,66 @@
 // @ts-nocheck
 // @ts-ignore
 import React from 'react';
-
-import { Link } from 'gatsby';
+import { Link, graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
+import BackgroundImage from 'gatsby-background-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Headings from '../components/headings';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Headings title={'Hey I\'m Dan'} />
-    <h3>
-      I create blazing fast modern websites. Get in touch now.
-      {' '}
-      <span role="img" aria-label="High Five">
-        🙌
-      </span>
-    </h3>
-    <Link to="/projects">
-      <ButtonStyled type="button">Projects</ButtonStyled>
-    </Link>
-    <Link to="/contact">
-      <ButtonStyled type="button" primary>
-        Contact me
-      </ButtonStyled>
-    </Link>
-  </Layout>
+  <StaticQuery
+    query={BACKGROUND_IMAGE_QUERY}
+    render={(data) => {
+      const backgroundFluidImageStack = [
+        data.file.childImageSharp.fluid,
+        'linear-gradient(rgba(23,23,23, 0.8), rgba(23,23,23, 0.8))',
+      ].reverse();
+      return (
+        <BackgroundImage
+          fluid={backgroundFluidImageStack}
+          style={{
+            height: '100vh',
+          }}
+          role="img"
+          aria-label="Background Image"
+        >
+          <Layout>
+            <SEO title="Home" />
+            <Headings title={'Hey I\'m Dan'} />
+            <h3>
+              I create blazing fast modern websites. Get in touch now.
+              {' '}
+              <span role="img" aria-label="High Five">
+                🙌
+              </span>
+            </h3>
+            <Link to="/projects">
+              <ButtonStyled type="button">Projects</ButtonStyled>
+            </Link>
+            <Link to="/contact">
+              <ButtonStyled type="button" primary>
+                Contact me
+              </ButtonStyled>
+            </Link>
+          </Layout>
+        </BackgroundImage>
+      );
+    }}
+  />
 );
+
+const BACKGROUND_IMAGE_QUERY = graphql`
+  query BackgroundImage {
+    file(relativePath: { regex: "/bg/" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 const ButtonStyled = styled.button`
   border: none;
