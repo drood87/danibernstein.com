@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // @ts-nocheck
 // @ts-ignore
 import React from 'react';

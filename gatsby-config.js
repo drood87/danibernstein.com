@@ -63,12 +63,12 @@ module.exports = {
       },
       {
         name: 'Catch of the day',
-        techStack: ['ReactJs', 'Firebase', 'React-Router', 'React Transition Group'],
+        techStack: ['React.js', 'Firebase', 'React-Router', 'React Transition Group'],
         link: 'https://www.catchoftheday.danibernstein.com/',
       },
       {
         name: 'GDDB',
-        techStack: ['ReactJs', 'Gatsby', 'Reach-Router', 'StyledComponents'],
+        techStack: ['React.js', 'Gatsby', 'Reach-Router', 'StyledComponents'],
         link: 'https://www.gddb.danibernstein.com/',
       },
     ],

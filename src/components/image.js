@@ -24,7 +24,7 @@ export default Image;
 
 const IMAGE_QUERY = graphql`
   query Images {
-    allImageSharp(filter: { id: { ne: "41b43134-3115-5a04-9c31-90d6186e8523" } }) {
+    allImageSharp(filter: { fluid: { src: { regex: "/pic/" } } }) {
       edges {
         node {
           id
