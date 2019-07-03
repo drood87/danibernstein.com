@@ -6,20 +6,6 @@ import SEO from '../components/seo';
 import Headings from '../components/headings';
 import Projectcard from '../components/projectcard';
 
-const PROJECTS_QUERY = graphql`
-  query Projects {
-    site {
-      siteMetadata {
-        projects {
-          name
-          link
-          techStack
-        }
-      }
-    }
-  }
-`;
-
 export default class projects extends Component {
   render() {
     return (
@@ -50,6 +36,20 @@ const ProjectsContainer = styled.div`
   grid-gap: 2rem;
   position: relative;
   /* overflow-x: auto; */
+`;
+
+const PROJECTS_QUERY = graphql`
+  query Projects {
+    site {
+      siteMetadata {
+        projects {
+          name
+          link
+          techStack
+        }
+      }
+    }
+  }
 `;
 
 // const Arrow = styled.div`

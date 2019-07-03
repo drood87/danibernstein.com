@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { graphql, StaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 
 export default class Projectcard extends Component {
   render() {
     const { name, techStack, link } = this.props;
     return (
       <Card>
-        <img src="https://via.placeholder.com/250x120.png" alt={name} />
+        <StaticQuery
+          query={PROJECT_IMAGE_QUERY}
+          render={data => <Img fluid={data.file.childImageSharp.fluid} alt={name} />}
+        />
+
         <h4>{name}</h4>
         <h5>Technologies used</h5>
         <ul>
@@ -20,6 +26,18 @@ export default class Projectcard extends Component {
     );
   }
 }
+
+const PROJECT_IMAGE_QUERY = graphql`
+  query ProjectImage {
+    file(relativePath: { eq: "Natours.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`;
 
 const Card = styled.div`
   width: 13.5rem;
