@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -15,18 +16,23 @@ import Img from 'gatsby-image';
 
 const Image = () => (
   <StaticQuery
-    query={graphql`
-      query {
-        Image: file(relativePath: { eq: "pic1.JPG" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Img fluid={data.Image.childImageSharp.fluid} alt="Image of Dan watching the sunrise" />}
+    query={IMAGE_QUERY}
+    render={data => data.allImageSharp.edges.map(edge => <Img fluid={edge.node.fluid} key={edge.node.id} />)}
   />
 );
 export default Image;
+
+const IMAGE_QUERY = graphql`
+  query Images {
+    allImageSharp(filter: { id: { ne: "41b43134-3115-5a04-9c31-90d6186e8523" } }) {
+      edges {
+        node {
+          id
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  }
+`;

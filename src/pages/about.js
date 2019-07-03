@@ -223,6 +223,10 @@ const FakeButtons = styled.span`
 `;
 
 const ImageContainerStyled = styled.div`
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 70%;
+  max-height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  grid-gap: 2rem;
 `;
