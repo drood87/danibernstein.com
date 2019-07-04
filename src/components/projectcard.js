@@ -12,7 +12,7 @@ export default class Projectcard extends Component {
     } = this.props;
     return (
       <Card>
-        <Img fluid={img.fluid} key={name} alt={name} />
+        <Img fluid={img.fluid} key={name} alt={name} style={{ height: '140px' }} />
         <h4>{name}</h4>
         <h5>Technologies used</h5>
         <ul>
@@ -27,6 +27,12 @@ export default class Projectcard extends Component {
     );
   }
 }
+
+// // @ts-ignore
+// const Image = styled(Img)`
+//   height: 100px;
+//   width: auto;
+// `;
 
 const Card = styled.div`
   width: 13.5rem;
@@ -51,7 +57,7 @@ const Card = styled.div`
     display: inline-block;
     padding: 1rem;
     position: relative;
-    top: -2.4rem;
+    top: -1.4rem;
     font-weight: 300;
     margin-left: 20px;
     margin-bottom: 0;
