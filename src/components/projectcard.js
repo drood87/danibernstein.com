@@ -13,7 +13,6 @@ export default class Projectcard extends Component {
           query={PROJECT_IMAGE_QUERY}
           render={data => <Img fluid={data.file.childImageSharp.fluid} alt={name} />}
         />
-
         <h4>{name}</h4>
         <h5>Technologies used</h5>
         <ul>
@@ -32,7 +31,7 @@ const PROJECT_IMAGE_QUERY = graphql`
     file(relativePath: { eq: "Natours.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
