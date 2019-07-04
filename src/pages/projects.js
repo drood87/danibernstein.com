@@ -16,8 +16,14 @@ export default class projects extends Component {
         <ProjectsContainer>
           <StaticQuery
             query={PROJECTS_QUERY}
-            render={data => data.site.siteMetadata.projects.map(project => (
-              <Projectcard name={project.name} key={project.name} link={project.link} techStack={project.techStack} />
+            render={({ site, allImageSharp }) => site.siteMetadata.projects.map((project, i) => (
+              <Projectcard
+                name={project.name}
+                key={project.name}
+                link={project.link}
+                techStack={project.techStack}
+                img={allImageSharp.edges[i].node}
+              />
             ))
             }
           />
@@ -46,6 +52,16 @@ const PROJECTS_QUERY = graphql`
           name
           link
           techStack
+        }
+      }
+    }
+    allImageSharp(filter: { fluid: { src: { regex: "/png/" } } }, skip: 1) {
+      edges {
+        node {
+          id
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
