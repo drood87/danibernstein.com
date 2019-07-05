@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // @ts-ignore
-import logo from '../images/100x100.svg';
+import logo from '../images/logo.png';
 import Socials from './socials';
 
 const SiteHeader = styled.header`
@@ -108,7 +108,7 @@ const Header = ({ menuLinks }) => (
           <NavWrapper>
             <h1>
               <Link to="/">
-                <img src={logo} alt="DB Logo" />
+                <img src={logo} alt="DB Logo" style={{ width: '100px', height: 'auto' }} />
               </Link>
             </h1>
             <NavUlList>

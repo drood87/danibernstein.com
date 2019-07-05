@@ -8,6 +8,7 @@ import Projectcard from '../components/projectcard';
 
 export default class projects extends Component {
   render() {
+    // const images = data.allImageSharp.node;
     return (
       <Layout>
         <SEO title="Projects" />
@@ -55,7 +56,7 @@ const PROJECTS_QUERY = graphql`
         }
       }
     }
-    allImageSharp(filter: { fluid: { src: { regex: "/png/" } } }, skip: 1) {
+    allImageSharp(filter: { fluid: { src: { regex: "/png/" } } }, sort: { fields: [original___src], order: ASC }) {
       edges {
         node {
           id

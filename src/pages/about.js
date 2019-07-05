@@ -194,7 +194,7 @@ const Resume = styled.div`
 `;
 
 const FakeButtons = styled.span`
-  background: #16a085;
+  background: #fa8231;
   height: 7px;
   width: 7px;
   display: block;
@@ -205,7 +205,7 @@ const FakeButtons = styled.span`
   &:before,
   &:after {
     content: "";
-    background: #16a085;
+    background: #fa8231;
     height: 7px;
     width: 7px;
     display: block;
