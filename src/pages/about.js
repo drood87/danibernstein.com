@@ -12,14 +12,7 @@ export default class about extends Component {
       <Layout>
         <SEO title="About Me" />
         <Headings title="About me" />
-        <p>
-          Hey there, glad you found me!
-          {' '}
-          <span role="img" aria-label="Smiley">
-            😏
-          </span>
-          {' '}
-        </p>
+        <p>Hey there, glad you found me!</p>
         <p>My name is Daniel Bernstein.</p>
         <p>
           I&apos;m a Junior Web Developer from Germany. I lived the past 5 years in beautiful Sydney, Australia and now
@@ -30,16 +23,12 @@ export default class about extends Component {
           </span>
         </p>
         <p>
-          I do freelancing work for people and businesses that I believe in, find challenging, and support my own
+          I do freelancing work for people and businesses that I find interesting, challenging, and support my own
           values.
         </p>
         <p>
-          I&apos;m a big believer that everyone should do what they love and still be able to make money and feed them
-          to escape the rat race.
-        </p>
-        <p>
-          I enjoy traveling to different places in the world and meet new interesting people along the way. I enjoy
-          exploring new cultures and believes.
+          I relish traveling to different places in the world and meeting new interesting people along the way. I enjoy
+          exploring new cultures, countries and ways of living.
           {' '}
           <a target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/dani87dani/">
             Nature photography
@@ -55,17 +44,10 @@ export default class about extends Component {
             CrossFit
           </a>
           {' '}
-          and challenge myself everyday anew. I&apos;m a big believer in clean eating and the positive effects on the
-          body.
+          and challenge myself everyday anew.I&apos;m a big adherent in clean eating and the positive effects on the
+          body it goes along with. body.
         </p>
         <p>
-          But I am not a complete hippie
-          {' '}
-          <span role="img" aria-label="Wink">
-            {' '}
-            😄
-            {' '}
-          </span>
           I love all things Marvel and am a massive MCU nerd and a big fan of RDJ. I also enjoy playing video games
           (especially Blizzard games) if I get the time to do so.
         </p>
