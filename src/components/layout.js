@@ -44,6 +44,7 @@ const StyledFooter = styled.footer`
   ${media.desktop`
     margin: 0 auto;
     text-align: center;
+    padding-top: 4%;
   `}
 `;
 

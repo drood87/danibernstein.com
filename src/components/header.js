@@ -28,6 +28,11 @@ const SiteHeader = styled.header`
     max-width: 100vw;
     height: 20vh;
   `}
+
+  ${media.smallTablet`
+    background: transparent;
+    box-shadow: none;
+  `}
 `;
 
 const NavWrapper = styled.div`
@@ -44,8 +49,16 @@ const NavWrapper = styled.div`
     justify-content: space-between;
   `}
 
+  ${media.smallTablet`
+    display: block;
+  `}
+
   h1 {
     margin: 0;
+
+    ${media.smallTablet`
+      display: none;
+    `}
   }
 `;
 

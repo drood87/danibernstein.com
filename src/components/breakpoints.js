@@ -6,6 +6,7 @@ const sizes = {
   giant: 1170,
   desktop: 960,
   tablet: 768,
+  smallTablet: 560,
   phone: 376,
 };
 
