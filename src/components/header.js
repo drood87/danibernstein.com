@@ -1,3 +1,5 @@
+// @ts-nocheck
+/* eslint-disable no-unused-vars */
 import { Link, StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -6,6 +8,7 @@ import styled from 'styled-components';
 // @ts-ignore
 import logo from '../images/logo.png';
 import Socials from './socials';
+import { media } from './breakpoints';
 
 const SiteHeader = styled.header`
   display: flex;
@@ -18,6 +21,13 @@ const SiteHeader = styled.header`
   padding: 1.45rem 1.0875rem;
   position: fixed;
   z-index: 1;
+
+  ${media.desktop`
+    display: block;
+    position: relative;
+    max-width: 100vw;
+    height: 20vh;
+  `}
 `;
 
 const NavWrapper = styled.div`
@@ -27,6 +37,12 @@ const NavWrapper = styled.div`
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
   justify-content: space-between;
+
+  ${media.desktop`
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+  `}
 
   h1 {
     margin: 0;
@@ -38,6 +54,10 @@ const NavUlList = styled.nav`
   flex-direction: column;
   align-items: center;
 
+  ${media.desktop`
+      flex-direction: row;
+  `}
+
   ul {
     display: flex;
     flex-direction: column;
@@ -46,6 +66,11 @@ const NavUlList = styled.nav`
     flex: 1;
     margin: 0 0 4rem 0;
     padding: 0;
+
+    ${media.desktop`
+      flex-direction: row;
+      margin: 0;
+  `}
   }
 
   li {
@@ -53,6 +78,10 @@ const NavUlList = styled.nav`
     padding: 1rem;
     text-align: center;
     font-weight: 300;
+
+    ${media.desktop`
+      margin-bottom: 1.7rem;
+    `}
 
     > a:link,
     > a:visited {
@@ -86,6 +115,10 @@ const NavUlList = styled.nav`
 
 const SocialWrap = styled.div`
   justify-self: flex-end;
+
+  ${media.desktop`
+    display: none;
+  `}
 `;
 
 const Header = ({ menuLinks }) => (

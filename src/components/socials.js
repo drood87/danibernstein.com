@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
-const iconStyle = { marginRight: '3px', height: 25, width: 25 };
+const iconStyle = { marginRight: '6px', height: 25, width: 25 };
 
 const Socials = ({ socialIcons }) => (
   <div>

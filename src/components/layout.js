@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from 'gatsby';
@@ -5,17 +6,31 @@ import styled from 'styled-components';
 
 import Header from './header';
 import Socials from './socials';
+import { media } from './breakpoints';
 import './layout.css';
 
 const BodyContainer = styled.div`
   position: relative;
   margin-left: 20vw;
+
+  ${media.desktop`
+    margin: 0 auto;
+
+  `}
 `;
 
 const SocialWrapper = styled.div`
+  ${media.giant`
+    display: none;
+  `}
+
+  ${media.desktop`
+  display: block;
   position: fixed;
   right: 1rem;
   top: 90%;
+
+  `}
 `;
 
 const StyledFooter = styled.footer`
@@ -25,6 +40,11 @@ const StyledFooter = styled.footer`
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
+
+  ${media.desktop`
+    margin: 0 auto;
+    text-align: center;
+  `}
 `;
 
 const Main = styled.main`
@@ -32,6 +52,15 @@ const Main = styled.main`
   margin: 0 auto 60px;
   min-height: 70vh;
   padding: 100px 5% 80px;
+
+  ${media.desktop`
+    margin: 0 auto;
+    padding: 10rem;
+  `}
+
+  ${media.tablet`
+    padding: 100px 5% 80px;
+  `}
 `;
 
 const Layout = ({ children }) => (

@@ -22,7 +22,11 @@
     "react-helmet": "^5.2.1",
     "react-scrollbar": "^0.5.6",
     "react-social-icons": "^4.1.0",
-    "styled-components": "^4.3.1"
+    "react-typography": "^0.16.19",
+    "styled-components": "^4.3.1",
+    "typography": "^0.16.19",
+    "typography-breakpoint-constants": "^0.16.19",
+    "typography-plugin-code": "^0.16.19"
   },
   "devDependencies": {
     "eslint": "^5.16.0",

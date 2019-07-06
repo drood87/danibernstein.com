@@ -44,8 +44,8 @@ export default class about extends Component {
             CrossFit
           </a>
           {' '}
-          and challenge myself everyday anew.I&apos;m a big adherent in clean eating and the positive effects on the
-          body it goes along with. body.
+          and challenge myself everyday anew. I&apos;m a big adherent in clean eating and the positive effects on the
+          body it goes along with.
         </p>
         <p>
           I love all things Marvel and am a massive MCU nerd and a big fan of RDJ. I also enjoy playing video games
