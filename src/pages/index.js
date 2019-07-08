@@ -21,7 +21,7 @@ const IndexPage = () => (
         <BackgroundImage
           fluid={backgroundFluidImageStack}
           style={{
-            height: '100vh',
+            minHeight: '100vh',
           }}
           role="img"
           aria-label="Background Image"
