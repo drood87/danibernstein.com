@@ -55,6 +55,10 @@ const StyledFooter = styled.footer`
     padding-top: 7%;
     padding-left: 0;
   `}
+
+  ${media.phone`
+    margin-top: -10%;
+  `}
 `;
 
 const Main = styled.main`
