@@ -14,7 +14,7 @@ export default class projects extends Component {
     return (
       <Layout>
         <SEO title="Projects" />
-        <div style={{ marginTop: '-80px' }}>
+        <ProjectSiteWrapper>
           <Headings title="Projects" style={{ marginBottom: '5rem' }} />
 
           <ProjectsContainer>
@@ -32,13 +32,21 @@ export default class projects extends Component {
               }
             />
           </ProjectsContainer>
-        </div>
+        </ProjectSiteWrapper>
 
         {/* <Arrow>&gt;</Arrow> */}
       </Layout>
     );
   }
 }
+
+const ProjectSiteWrapper = styled.div`
+  margin-top: -80px;
+
+  ${media.desktop`
+    margin-top: 16px;
+  `}
+`;
 
 const ProjectsContainer = styled.div`
   display: grid;
@@ -55,6 +63,7 @@ const ProjectsContainer = styled.div`
   justify-content: center;
   justify-items: center;
   grid-gap: 1rem;
+
   `}
 `;
 

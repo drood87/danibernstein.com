@@ -28,6 +28,11 @@ const SiteHeader = styled.header`
     height: 10rem;
   `}
 
+  ${media.desktop`
+    position:fixed;
+    width: 100vw;
+  `}
+
   ${media.smallTablet`
     background: transparent;
     box-shadow: none;
