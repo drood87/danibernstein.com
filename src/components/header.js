@@ -33,6 +33,10 @@ const SiteHeader = styled.header`
     width: 100vw;
   `}
 
+  ${media.tablet`
+    position:relative;
+  `}
+
   ${media.smallTablet`
     position: relative;
     background: transparent;
