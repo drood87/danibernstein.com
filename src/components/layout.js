@@ -79,6 +79,10 @@ const Main = styled.main`
   ${media.tablet`
     padding: 100px 5% 80px;
   `}
+
+   ${media.smallTablet`
+    padding: 16px 5% 80px;
+  `}
 `;
 
 const Layout = ({ children }) => (
