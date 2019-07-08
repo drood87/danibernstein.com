@@ -5,7 +5,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // @ts-ignore
-import logo from '../images/logo.png';
+import logo from '../images/logo_transparent.png';
 import Socials from './socials';
 import { media } from './breakpoints';
 
