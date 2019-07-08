@@ -40,6 +40,7 @@ const StyledFooter = styled.footer`
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
+  text-align:center;
 
   ${media.desktop`
     margin: 0 auto;
