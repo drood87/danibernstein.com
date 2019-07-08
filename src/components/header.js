@@ -38,6 +38,10 @@ const SiteHeader = styled.header`
     background: transparent;
     box-shadow: none;
   `}
+
+  ${media.phone`
+    position: relative;
+  `}
 `;
 
 const NavWrapper = styled.div`
