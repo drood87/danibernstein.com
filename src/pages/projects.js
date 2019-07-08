@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { graphql, StaticQuery } from 'gatsby';
@@ -46,8 +47,12 @@ const ProjectsContainer = styled.div`
   /* overflow-x: auto; */
 
   ${media.tablet`
-  display: block;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 1rem;
   `}
 `;
 

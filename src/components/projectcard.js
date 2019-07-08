@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 // import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import { media } from './breakpoints';
 
 export default class Projectcard extends Component {
   render() {
@@ -35,6 +36,11 @@ const Card = styled.div`
   box-shadow: 1px 3px 8px #000;
   height: 25.3rem;
   position: relative;
+
+  ${media.smallTablet`
+  height: 28rem;
+  width: 15rem;
+  `}
 
   &:last-child::after {
     content: "";
