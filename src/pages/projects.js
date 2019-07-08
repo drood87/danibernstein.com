@@ -14,23 +14,25 @@ export default class projects extends Component {
     return (
       <Layout>
         <SEO title="Projects" />
-        <Headings title="Projects" />
+        <div style={{ marginTop: '-80px' }}>
+          <Headings title="Projects" style={{ marginBottom: '5rem' }} />
 
-        <ProjectsContainer>
-          <StaticQuery
-            query={PROJECTS_QUERY}
-            render={({ site, allImageSharp }) => site.siteMetadata.projects.map((project, i) => (
-              <Projectcard
-                name={project.name}
-                key={project.name}
-                link={project.link}
-                techStack={project.techStack}
-                img={allImageSharp.edges[i].node}
-              />
-            ))
-            }
-          />
-        </ProjectsContainer>
+          <ProjectsContainer>
+            <StaticQuery
+              query={PROJECTS_QUERY}
+              render={({ site, allImageSharp }) => site.siteMetadata.projects.map((project, i) => (
+                <Projectcard
+                  name={project.name}
+                  key={project.name}
+                  link={project.link}
+                  techStack={project.techStack}
+                  img={allImageSharp.edges[i].node}
+                />
+              ))
+              }
+            />
+          </ProjectsContainer>
+        </div>
 
         {/* <Arrow>&gt;</Arrow> */}
       </Layout>
