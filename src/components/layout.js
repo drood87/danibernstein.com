@@ -15,7 +15,7 @@ const BodyContainer = styled.div`
 
   ${media.desktop`
     margin: 0 auto;
-
+    padding-top: 5rem;
   `}
 `;
 
@@ -45,6 +45,8 @@ const StyledFooter = styled.footer`
   ${media.desktop`
     margin: 0 auto;
     text-align: center;
+    /* position: relative;
+    bottom: -4rem; */
   `}
 
   ${media.tablet`

@@ -29,11 +29,12 @@ const SiteHeader = styled.header`
   `}
 
   ${media.desktop`
-    position:fixed;
+    position: fixed;
     width: 100vw;
   `}
 
   ${media.smallTablet`
+    position: relative;
     background: transparent;
     box-shadow: none;
   `}

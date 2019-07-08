@@ -5,13 +5,14 @@ import Layout from '../components/layout';
 import Headings from '../components/headings';
 import SEO from '../components/seo';
 import Image from '../components/image';
+import { media } from '../components/breakpoints';
 
 export default class about extends Component {
   render() {
     return (
       <Layout>
         <SEO title="About Me" />
-        <div style={{ marginTop: '-80px' }}>
+        <AboutSiteWrapper>
           <Headings title="About me" />
           <p>Hey there, glad you found me!</p>
           <p>My name is Daniel Bernstein.</p>
@@ -109,11 +110,19 @@ me.
               <li>Working with API&apos;s</li>
             </ul>
           </Resume>
-        </div>
+        </AboutSiteWrapper>
       </Layout>
     );
   }
 }
+
+const AboutSiteWrapper = styled.div`
+  margin-top: -80px;
+
+  ${media.desktop`
+    margin-top: 16px;
+  `}
+`;
 
 const Resume = styled.div`
   background: #222;
