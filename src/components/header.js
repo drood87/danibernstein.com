@@ -25,7 +25,7 @@ const SiteHeader = styled.header`
     display: block;
     position: relative;
     max-width: 100vw;
-    height: 20vh;
+    height: 10rem;
   `}
 
   ${media.smallTablet`
