@@ -56,6 +56,15 @@ const ProjectsContainer = styled.div`
   position: relative;
   /* overflow-x: auto; */
 
+  ${media.desktop`
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-flow: row;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 1rem;
+  `}
+
   ${media.tablet`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
