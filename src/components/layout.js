@@ -44,7 +44,15 @@ const StyledFooter = styled.footer`
   ${media.desktop`
     margin: 0 auto;
     text-align: center;
+  `}
+
+  ${media.tablet`
     padding-top: 4%;
+  `}
+
+  ${media.smallTablet`
+    padding-top: 7%;
+    padding-left: 0;
   `}
 `;
 

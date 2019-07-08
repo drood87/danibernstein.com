@@ -1,5 +1,4 @@
 // @ts-nocheck
-/* eslint-disable no-unused-vars */
 import { Link, StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';

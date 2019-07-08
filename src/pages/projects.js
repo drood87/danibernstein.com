@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Headings from '../components/headings';
 import Projectcard from '../components/projectcard';
+import { media } from '../components/breakpoints';
 
 export default class projects extends Component {
   render() {
@@ -43,6 +44,11 @@ const ProjectsContainer = styled.div`
   grid-gap: 2rem;
   position: relative;
   /* overflow-x: auto; */
+
+  ${media.tablet`
+  display: block;
+  margin: 0 auto;
+  `}
 `;
 
 const PROJECTS_QUERY = graphql`
