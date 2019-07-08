@@ -1,6 +1,6 @@
-/* eslint-disable max-len */
 // @ts-nocheck
-// @ts-ignore
+/* eslint-disable max-len */
+
 import React from 'react';
 import { Link, graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
@@ -21,7 +21,7 @@ const IndexPage = () => (
         <BackgroundImage
           fluid={backgroundFluidImageStack}
           style={{
-            height: '100vh',
+            height: '100%',
           }}
           role="img"
           aria-label="Background Image"
