@@ -78,6 +78,15 @@ module.exports = {
     'gatsby-plugin-eslint',
     'gatsby-plugin-styled-components',
     {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: 'UA-141693739-2',
+        head: true,
+        anonymize: true,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
