@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Daniel Bernstein',
+    title: 'Daniel Bernstein - Web Developer ',
     // eslint-disable-next-line max-len
     description: 'Producing modern excellent websites',
     author: '@Dan Bernstein',
