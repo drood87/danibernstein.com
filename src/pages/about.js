@@ -50,7 +50,7 @@ export default class about extends Component {
             body it goes along with.
           </p>
           <p>
-            I love all things Marvel and am a massive MCU nerd and a big fan of RDJ. I also enjoy playing video games
+            I love all things Marvel and am a massive Marvel (Comics and Cinematic Universe) nerd and a big fan of Robert Downy Jr. I also enjoy playing video games
             (especially Blizzard games) if I get the time to do so.
           </p>
           <p>
