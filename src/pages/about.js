@@ -17,7 +17,7 @@ export default class about extends Component {
           <p>Hey there, glad you found me!</p>
           <p>My name is Daniel Bernstein.</p>
           <p>
-            I&apos;m a Junior Web Developer from Germany. I lived the past 5 years in beautiful Sydney, Australia and
+            I&apos;m a Front-end Web Developer from Germany. I lived the past 5 years in beautiful Sydney, Australia and
             now I started my own Web Development Business in Bali, Indonesia
             {' '}
             <span role="img" aria-label="PalmTree">
