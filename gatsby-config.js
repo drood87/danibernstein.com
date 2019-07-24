@@ -67,9 +67,9 @@ module.exports = {
         link: 'https://www.catchoftheday.danibernstein.com/',
       },
       {
-        name: 'GDDB',
-        techStack: ['React.js', 'Gatsby', 'Reach-Router', 'StyledComponents'],
-        link: 'https://www.gddb.danibernstein.com/',
+        name: 'BGD',
+        techStack: ['React.js', 'React-Router', 'Express', 'StyledComponents'],
+        link: 'https://www.bgd.danibernstein.com/',
       },
     ],
   },
@@ -80,7 +80,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: 'UA-141693739-2',
         head: true,
         anonymize: true,
