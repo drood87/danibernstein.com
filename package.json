@@ -6,7 +6,7 @@
   "author": "Dan Bernstein <dbernstein87@googlemail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.9.4",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^0.7.6",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-google-analytics": "^2.1.1",
